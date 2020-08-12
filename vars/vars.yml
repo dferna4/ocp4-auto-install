@@ -87,6 +87,9 @@ project_request_template_resource_quota:
   requests.storage: 50Gi
   persistentvolumeclaims: 5
 
+# DNS Forwarding
+dns_forwarding: True
+
 ### Extra DevOps Or RH Tools
 
 # ArgoCD
