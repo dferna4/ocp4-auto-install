@@ -1,0 +1,14 @@
+---
+- name: '[OCP4-AUTO-INSTALL] Deploy and Configure CostManagement operator'
+  hosts: localhost
+  connection: local
+  vars_files:
+    - vars/vars.yml
+    - vault/vault.yml
+  tasks:
+    - name: '[OCP4-AUTO-INSTALL][POST-INSTALL][COSTMANAGEMENT-OPERATOR] Install and configure the Cost Management operator'
+      include_role:
+        name: "ocp4-post-costmanagement"
+      when:
+        - costmanagement is defined
+        - costmanagement | bool

@@ -86,6 +86,8 @@ project_request_template_resource_quota:
   resourcequotas: 1
   requests.storage: 50Gi
   persistentvolumeclaims: 5
+## Red Hat Cost Management operator:
+costmanagement: True
 
 ### Extra DevOps Or RH Tools
 
